@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Art of Rachael Britton</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="css/ArtofRachaelstylefinal.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+
+  </head>
+
+<body>
+   <header>
+
+        <h1>The Art of Rachael Britton</h1>
+<nav>
+      <ul>
+        <li><a class="active" href="ArtofRachael.html">Home</a></li>
+        <li><a href="ArtofRachaelAbout.html">About</a></li>
+        <li><a href="ArtofRachaelGallery.html">Character Designs</a></li>
+    </ul>
+</nav>
+
+</header>
+
+
+
+    <main>
+      <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 7</div>
+        <img src="Images/Kirra.jpeg" alt="Picture of Aboriginee Girl" style="width:100%">
+        <div class="overlay"><div class="text">Kirra - An Aboriginee Heroine</div></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 7</div>
+        <img src="Images/LavaBoy.jpeg" alt="Picture of Lava boy" style="width:100%">
+        <div class="overlay"><div class="text">Lava Child</div></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 7</div>
+        <img src="Images/Friskie.jpeg" alt="Painting of grey cat" style="width:100%">
+        <div class="overlay"><div class="text">Friskie the Grey Tabby</div></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 7</div>
+        <img src="Images/DisneyCastle.png" alt="Painting of Disney Castle" style="width:100%">
+        <div class="overlay"><div class="text">Disney Castle Intro</div></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 7</div>
+        <img src="Images/HamiltonJefferson.jpg" alt="Drawing of Thomas Jefferson from the musical hamilton" style="width:100%">
+        <div class="overlay"><div class="text">Daveed Diggs as Thomas Jefferson</div></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 7</div>
+        <img src="Images/Lion.png" alt="Painting of lion" style="width:100%">
+        <div class="overlay"><div class="text">Looking Up</div></div>
+      </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 7</div>
+          <img src="Images/Elephant.jpeg" alt="Painting of elephant" style="width:100%">
+          <div class="overlay"><div class="text">New Friends</div></div>
+        </div>
+
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+<br>
+
+<div id="maintext"><p> Hi there! My name is Rachael and thank you for stopping by my website.
+  Here you can find some examples of my most recent work, along with some other information about me.</p></div>
+<br>
+<br>
+  <footer>Copyright &copy; Rachael Britton</footer>
+</main>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
