@@ -1,0 +1,145 @@
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+  text-align: center;
+}
+h1 {
+  font-family: 'Roboto', sans-serif;
+  margin-left: 50px;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00688B;
+    padding-left: 50px;
+}
+
+li {
+    font-family: 'Roboto', sans-serif;
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #325C74;
+}
+
+.active {
+  background-color:#5CACEE;
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background-image: url("../Images/foggy_birds.png");
+}
+
+img {
+  display: block;
+  margin-left: 50;
+  margin-right: 50;
+  text-align: center;
+}
+
+footer {
+    padding: 1em;
+    color: white;
+    background-color: #00688B;
+    clear: left;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+main {
+  margin-top: 30px;
+}
+
+#maintext {
+  background-color: lightgrey;
+  width: 1000px;
+  border: 25px solid #00688B;
+  padding: 25px;
+  margin: 30px;
+  margin: auto;
+  margin-right: auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  align-items: stretch;
+}
+
+.box {
+  max-width: 100%;
+}
+
+.box2 {
+  background-color: red;
+}
+
+.box2:hover {
+  background-color: blue;
+  color: white;
+}
+
+/* @media (max-width: 800px) {
+  .container {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+} */
